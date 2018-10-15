@@ -55,16 +55,18 @@
         height: 255px;
     }
     *[class$=__button-green] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     *[class$=__button-gray] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     .portfolio__button {
         font-size: 15px;
@@ -136,16 +138,18 @@
         height: 342px;
     }
     *[class$=__button-green] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     *[class$=__button-gray] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     .portfolio__button {
         font-size: 15px;
@@ -227,16 +231,18 @@
         height: 342px;
     }
     *[class$=__button-green] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     *[class$=__button-gray] {
-        width: 110px;
-        height: 45px;
+        width: 98px;
+        height: 35px;
         font-size: 15px;
         margin-top: 36px;
+        line-height: 35px;
     }
     .portfolio__button {
         font-size: 15px;
