@@ -16,7 +16,7 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	font-family: $default-font;
+	font-family: $roboto;
 	overflow-x: hidden;
 	color: $text;
 	input, textarea {
@@ -38,6 +38,9 @@ body {
 	&.img-width {
 		width: 100%;
 	}
+}
+a {
+    text-decoration: none;
 }
 
 .text-center {
@@ -133,7 +136,7 @@ b, strong {
         font-size: 11px;
         text-transform: uppercase;
         right: 20%;
-        top: 300px;
+        top: 255px;
         line-height: 1;
     }
     .phone {
@@ -161,13 +164,21 @@ b, strong {
         position: relative;
         left: 22%;
         margin-top: -359px;
-        width: 150px;
+        width: 145px;
         height: 67px;
         font-size: 13px;
         color: white;
         line-height: 1.1;
         list-style-type: none;
         text-transform: uppercase;
+        li
+            a {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: black;
+                }
+            }
         &__item::before {
             content: url(../img/arrow_icon.png); 
             display: block;
@@ -180,9 +191,6 @@ b, strong {
         &__item {
             cursor: pointer;
             float: left;
-            &:hover{
-                color: black;
-            }
             &:hover:before {
                 opacity: 1;
             }
@@ -195,6 +203,8 @@ b, strong {
         font-size: 48px;
         color: white;
         width: 184px;
+        text-transform: uppercase;
+        font-weight: normal;
     }
     
 }
@@ -212,6 +222,8 @@ b, strong {
     }
     &__title {
         font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -279,6 +291,8 @@ b, strong {
     &__title {
         font-size: 24px;
         margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -387,6 +401,8 @@ b, strong {
     &__title {
         font-size: 24px;
         margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -452,6 +468,8 @@ b, strong {
     &__title {
         font-size: 24px;
         margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -506,6 +524,10 @@ b, strong {
         margin-right: 67px;;
         display: flex;
         justify-content: center;
+    }
+    &__title {
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__inner2 {
         display: flex;
@@ -573,6 +595,8 @@ b, strong {
     &__title {
         font-size: 24px;
         margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -626,6 +650,8 @@ b, strong {
     &__title {
         font-size: 24px;
         margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
     }
     &__info {
         font-size: 12px;
@@ -687,6 +713,11 @@ b, strong {
         line-height: 1.1;
         list-style-type: none;
         text-transform: uppercase;
+        li
+            a {
+                text-decoration: none;
+                color: white;
+            }
         label {
             color: black;
             font-size: 14px;
@@ -726,6 +757,7 @@ b, strong {
         color: white;
         font-size: 48px;
         text-transform: uppercase;
+        font-weight: normal;
     }
 }
 .awards {
@@ -736,7 +768,7 @@ b, strong {
     align-items: center;
     &__wrapper {
         display: flex;
-        width: 750px;
+        width:770px;
         justify-content: space-between;
         margin-left: 10%;
     }
@@ -752,6 +784,7 @@ b, strong {
             margin-top: 30px;
             font-size: 18px;
             line-height: 18px;
+            font-weight: 300;
         }
     }
     &__right-column {
@@ -772,11 +805,11 @@ b, strong {
         }
         &__wrap {
             display: flex;
-            margin-top: 29px;
+            margin-top: 24px;
             justify-content: space-between;
             .info {
                 width: 162px;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 14px;
             }
         }
@@ -786,20 +819,205 @@ b, strong {
     grid-row: 6;
     grid-column: 1 / span 3;
     background: #e9eae2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        width: 1167px;
+        height: 227px;
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 300;
+        }
+    }
+    &__item {
+        height: 100%;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__image {
+        height: 150px;
+        width: 100%;
+        background: url(../img/staff__item.png) #fff no-repeat;
+    }
+    &__image2 {
+        height: 150px;
+        width: 100%;
+        background: url(../img/staff__item2.png); 
+    }
+    &__image3 {
+        height: 150px;
+        width: 100%;
+        background: url(../img/staff__item3.png); 
+    }
+    &__name {
+        font-size: 12px;
+        margin-top: 18px;
+        span {
+            font-size: 13px;
+            font-weight: bold;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left__links {
+        color: #fd5000;
+        margin-top: 21px;
+        font-size: 14px;
+        line-height: 13px;
+        cursor: pointer;
+        &::after {
+            content: url(../img/arrow-left.png); 
+            display: block;
+            float: right;
+            margin-left: 10px;
+        }
+    }
+    &__right__links {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        align-self: flex-end;
+        width: 91px;
+        i {
+            text-decoration: none;
+            color: #fd5000;
+            font-size: 14px;
+        }
+    }
 }
 .news {
     grid-row: 7;
     background: #d4edbf;
+    &__line {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    &__title {
+        position: relative;
+        margin-top: -197px;
+        float: right;
+        margin-right: 22%;
+        color: white;
+        font-size: 48px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
 }
 .mauris {
     grid-row: 7;
     grid-column: 2 / span 2;
     background: #e5e9df;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        width: 780px;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+    &__item {
+        width: 374px;
+        height: 100%;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        height: 45px;
+    }
+    &__date {
+        font-size: 12px;
+        color: #6a6969;
+    }
+    &__image {
+        background-image: url(../img/mauris__item1.png);
+        height: 180px;
+    }
+    &__image2 {
+        background-image: url(../img/mauris__item2.png);
+        height: 180px;
+    }
+    &__info {
+        width: 370px;
+        height: 55px;
+        margin-top: 22px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: justify;
+        color: #6a6969;
+    }
+    &__link {
+        display: block;
+        font-size: 12px;
+        color: #fd5000;
+        float: right;
+        margin-top: 9px;
+    }
+
+
 }
 .contact {
     grid-row: 8;
     grid-column: 1 / span 3;
     background: #e9eae2;
+    display: flex;
+    &__map {
+        width: 50%
+    }
+    &__info {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        margin-left: 202px;
+    }
+    &__wrapper {
+        width: 462px;
+        display: flex;
+    }
+    &__adress {
+        display: flex;
+        flex-direction: column;
+        p {
+            width: 114px;
+            height: 67px;
+            font-size: 13px;
+            line-height: 14px;
+            
+        }
+    }
+    &__social-links {
+        margin-top: 51px;
+        justify-self: end;
+        color: #7acec3;
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        padding: {
+            left: 12px;
+            right: 12px;
+        }
+        i {
+            text-decoration: none;
+            color: #7acec3;
+            font-size: 20px;
+        }
+    }
+}
+.rights {
+    position: absolute;
+    bottom: 53px;
+    font-size: 12px;
 }
 
 
