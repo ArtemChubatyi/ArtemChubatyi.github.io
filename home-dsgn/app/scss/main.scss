@@ -7,8 +7,8 @@
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+	background-color: $orange;
+	color: $white;
 }
 
 body {
@@ -29,10 +29,6 @@ body {
 			border-color: green;
 		}
 	}
-}
-:active, :hover, :focus {
-    outline: none;
-    outline-offset: 0;
 }
 
 .img-responsive {
@@ -58,7 +54,7 @@ b, strong {
     opacity: 0;
 }
 .is-active {
-    background-color: #f8c255;
+    background-color: $orange;
 }
 .content {
     display: grid;
@@ -67,7 +63,7 @@ b, strong {
 }
 .header {
 	grid-column: 1 / span 2; 
-    background: #f7f7f7;
+    background: $dirty-white;
     display: flex;
 
     &__content {
@@ -88,7 +84,7 @@ b, strong {
     &__social-links {
         margin-top: 51px;
         justify-self: end;
-        color: #7acec3;
+        color: $turquoise;
         display: flex;
         justify-content: space-around;
         text-decoration: none;
@@ -98,7 +94,7 @@ b, strong {
         }
         i {
             text-decoration: none;
-            color: #7acec3;
+            color: $turquoise;
             font-size: 20px;
         }
     }
@@ -112,7 +108,7 @@ b, strong {
     }
 }
 .menu {
-	background: #7acec3;
+	background: $turquoise;
     grid-column: 3;
     &__line {
         display: block;
@@ -122,7 +118,7 @@ b, strong {
     .hamburger-wrap{
         width: 125px;
         height: 125px;
-        border: 3px solid #f7f7f7;
+        border: 3px solid $dirty-white;
         position: absolute;
         top: 50px;
         right: 11.5%;
@@ -133,30 +129,31 @@ b, strong {
         .hamburger {
             transition: all .3s ease-in-out;
             outline: none!important;
+            outline-offset: 0;
             opacity: 1;
             height: 100%;
             width: 100%;
             line-height: 102px;
             .hamburger-inner {
-                background: #fff;
+                background: $white;
                 &::before {
-                    background: #fff;  
+                    background: $white;  
                 }
                 &::after {
-                    background: #fff;  
+                    background: $white;  
                 }
             }
         } 
     }
     &__navigation {
         box-sizing: inherit;
-        border-left: 3px solid #f7f7f7;
-        border-top: 3px solid #f7f7f7;
-        border-bottom: 3px solid #f7f7f7;  
+        border-left: 3px solid $dirty-white;
+        border-top: 3px solid $dirty-white;
+        border-bottom: 3px solid $dirty-white;  
         transition: all .3s ease-in-out;
         position: absolute;
         margin-left: -372px;
-        background-color: #f8c255;
+        background-color: $orange;
     }
     &__list {
         margin: 0;
@@ -171,7 +168,7 @@ b, strong {
         height: 119px;
         float: left;
         a {
-            color: white;
+            color: $white;
             text-decoration: none;
             display: block;
             width: 100%;
@@ -183,7 +180,7 @@ b, strong {
     }
     .adress {
         position: absolute;
-        color: #f7f7f7;
+        color: $dirty-white;
         width: 98px;
         height: 67px;
         font-size: 11px;
@@ -194,7 +191,7 @@ b, strong {
     }
     .phone {
         position: absolute;
-        color: #f7f7f7;
+        color: $dirty-white;
         width: 133px;
         height: 27px;
         font-size: 11px;
@@ -207,7 +204,7 @@ b, strong {
 
 .projects {
     grid-row: 2;
-    background: #ebb240;
+    background: $orange;
     &__line {
         display: block;
         width: 100%;
@@ -220,16 +217,16 @@ b, strong {
         width: 145px;
         height: 67px;
         font-size: 13px;
-        color: white;
+        color: $white;
         line-height: 1.1;
         list-style-type: none;
         text-transform: uppercase;
         li
             a {
                 text-decoration: none;
-                color: white;
+                color: $white;
                 &:hover {
-                    color: black;
+                    color: $black;
                 }
             }
         &-item::before {
@@ -254,7 +251,7 @@ b, strong {
         left: 224px;
         margin-top: 71px;
         font-size: 48px;
-        color: white;
+        color: $white;
         width: 184px;
         text-transform: uppercase;
         font-weight: normal;
@@ -265,7 +262,7 @@ b, strong {
 .fondue {
     grid-column: 2;
     grid-row: 2;
-    background: #fefefe;
+    background: $creamy;
     &__content {
         margin-top: 87px;
         margin-left: 12%;
@@ -294,7 +291,7 @@ b, strong {
         margin-top: 76px;
         font-size: 18px;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         height: 15px;
         &::before {
             content: url(../img/arrow_orange.png); 
@@ -312,7 +309,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -334,7 +331,7 @@ b, strong {
 
 }
 .lamp {
-    background: #dfe0d9;
+    background: $another-creamy;
     &__content {
         margin-top: 30px;
         margin-left: 5%;
@@ -364,7 +361,7 @@ b, strong {
         margin-top: 16px;
         font-size: 18px;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -381,7 +378,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -396,7 +393,7 @@ b, strong {
     }
 }
 .tabano {
-    background: #e9eae2;
+    background: $another-dirty-white;
     display: flex;
     &__content {
         width: 100%;
@@ -419,7 +416,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -428,7 +425,7 @@ b, strong {
         font-size: 18px;
         margin-top: 5px;;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -474,7 +471,7 @@ b, strong {
         margin-top: 16px;
         font-size: 18px;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -491,7 +488,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -503,10 +500,10 @@ b, strong {
     grid-row: 3;
     grid-column: 1 / span 2;
     display: flex;
-    background: #eaeaea;
+    background: $another-creamy-dirty-white;
 }
 .xx {
-    color: white;
+    color: $white;
     background-image: url(../img/louis.png);
     background-size: cover;
     width: 30%;
@@ -541,7 +538,7 @@ b, strong {
         margin-top: 38px;
         font-size: 18px;
         text-transform: uppercase;
-        color: white;
+        color: $white;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -558,7 +555,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -604,7 +601,7 @@ b, strong {
         margin-top: 10px;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -668,7 +665,7 @@ b, strong {
         margin-left: 30px;
         font-size: 18px;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -681,17 +678,20 @@ b, strong {
     }
     &__like {
         margin-left: 38px;
+        align-self: flex-end;
+        margin-bottom: 8px;
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
+            margin-bottom: 0px;
         }
     }
 }
 .alessi {
     width: 30%;
-    background: url(../img/alessi.png) #cecece;
+    background: url(../img/alessi.png) $gray;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
@@ -724,7 +724,7 @@ b, strong {
         margin-left: -24px;
         margin-top: 25px;
         text-transform: uppercase;
-        color: #333;
+        color: $text;
         &::before {
             content: url(../img/arrow_orange.png); 
             display: block;
@@ -741,7 +741,7 @@ b, strong {
         cursor: pointer;
         p {
             font-size: 11px;
-            color: red;
+            color: $red;
             margin-top: 5px;
         }
     }
@@ -749,7 +749,7 @@ b, strong {
 .timeline {
     grid-row: 4;
     grid-column: 3;
-    background: #ebb240;
+    background: $orange;
     svg {
         display: block;
         width: 100%;
@@ -762,17 +762,17 @@ b, strong {
         width: 130px;
         height: 67px;
         font-size: 13px;
-        color: white;
+        color: $white;
         line-height: 1.1;
         list-style-type: none;
         text-transform: uppercase;
         li
             a {
                 text-decoration: none;
-                color: white;
+                color: $white;
             }
         label {
-            color: black;
+            color: $black;
             font-size: 14px;
             margin-left: 24px;
         }
@@ -796,7 +796,7 @@ b, strong {
 }
 .studio {
     grid-row: 5;
-    background: #ff9b6d;
+    background: $coral;
     &__line {
         display: block;
         height: 100%;
@@ -807,7 +807,7 @@ b, strong {
         margin-top: -197px;
         float: right;
         margin-right: 20%;
-        color: white;
+        color: $white;
         font-size: 48px;
         text-transform: uppercase;
         font-weight: normal;
@@ -816,7 +816,7 @@ b, strong {
 .awards {
     grid-row: 5;
     grid-column: 2 / span 2;
-    background: #e9eae2;
+    background: $another-dirty-white;
     display: flex;
     align-items: center;
     &__wrapper {
@@ -871,7 +871,7 @@ b, strong {
 .staff {
     grid-row: 6;
     grid-column: 1 / span 3;
-    background: #e9eae2;
+    background: $another-dirty-white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -895,7 +895,7 @@ b, strong {
     &__image {
         height: 150px;
         width: 100%;
-        background: url(../img/staff__item.png) #fff no-repeat;
+        background: url(../img/staff__item.png) $white no-repeat;
     }
     &__image2 {
         height: 150px;
@@ -920,7 +920,7 @@ b, strong {
         justify-content: space-between;
     }
     &__left__links {
-        color: #fd5000;
+        color: $dark-orange;
         margin-top: 21px;
         font-size: 14px;
         line-height: 13px;
@@ -940,14 +940,14 @@ b, strong {
         width: 91px;
         i {
             text-decoration: none;
-            color: #fd5000;
+            color: $dark-orange;
             font-size: 14px;
         }
     }
 }
 .news {
     grid-row: 7;
-    background: #d4edbf;
+    background: $greeny;
     &__line {
         display: block;
         height: 100%;
@@ -958,7 +958,7 @@ b, strong {
         margin-top: -197px;
         float: right;
         margin-right: 22%;
-        color: white;
+        color: $white;
         font-size: 48px;
         text-transform: uppercase;
         font-weight: normal;
@@ -1010,7 +1010,7 @@ b, strong {
     &__link {
         display: block;
         font-size: 12px;
-        color: #fd5000;
+        color: $dark-orange;
         float: right;
         margin-top: 9px;
     }
@@ -1020,10 +1020,15 @@ b, strong {
 .contact {
     grid-row: 8;
     grid-column: 1 / span 3;
-    background: #e9eae2;
+    background: $another-dirty-white;
     display: flex;
     &__map {
         width: 50%
+    }
+    &__text {
+        text-transform: uppercase;
+        width: 90px;
+        line-height: 1;
     }
     &__info {
         width: 50%;
@@ -1052,7 +1057,7 @@ b, strong {
     &__social-links {
         margin-top: 51px;
         justify-self: end;
-        color: #7acec3;
+        color: $turquoise;
         display: flex;
         justify-content: space-around;
         text-decoration: none;
@@ -1062,7 +1067,7 @@ b, strong {
         }
         i {
             text-decoration: none;
-            color: #7acec3;
+            color: $turquoise;
             font-size: 20px;
         }
     }
