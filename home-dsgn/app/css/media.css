@@ -71,9 +71,12 @@
         margin-right: 10px;
     }
     .studio {
-        grid-row: 7
+        grid-row: 7;
+        width: 70%;
     }
     .awards {
+        width: 130%;
+        margin-left: -30%;
         grid-row: 7;
         grid-column: 2;
     }
@@ -97,9 +100,12 @@
         align-items: center;
     }
     .news {
+        width: 70%;
         grid-row: 9;
     }
     .mauris {
+        width: 130%;
+        margin-left: -30%;
         grid-row: 9;
         grid-column: 2;
     }
@@ -166,9 +172,7 @@
     .projects__title {
         width: auto;
         float: right;
-        left: 0;
-        margin-right: 13%;
-        margin-top: 0px;
+        margin-top: 17px;
     }
     .fondue {
         grid-row: 3;
@@ -194,6 +198,8 @@
         display: none;
     }
     .awards {
+        width: 100%;
+        margin-left: 0;
         grid-row: 8;
         grid-column: 1;
         display: flex;
@@ -252,6 +258,8 @@
         display: none;
     }
     .mauris {
+        width: 100%;
+        margin-left: 0;
         grid-row: 10;
         grid-column: 1;
         display: flex;
